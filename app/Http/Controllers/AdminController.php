@@ -26,8 +26,8 @@ class AdminController extends Controller
 
   public function new_employee_form(){
     $companies = Company::all();
-    if(!$companies()->first())
-      return redirect(route('new_company_form'));
+    if(!$companies->first())
+      return redirect(route('new_company'));
     return view('Dashboard.employees_new')->with('companies',$companies);
   }
 
