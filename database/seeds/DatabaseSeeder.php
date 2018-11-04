@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
              'name' => 'ahmed',
              'email' => 'ahmed@femto15.com',
              'password' => bcrypt('ahmed'),
+             'created_at' => date("Y-m-d H:i:s"),
          ]);
     }
 }
